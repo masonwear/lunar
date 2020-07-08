@@ -40,6 +40,17 @@ const GlobalStyle = createGlobalStyle`
 
 }
 
+h3 {
+
+    font-family: 'Circular Std';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 25px;
+
+color: #FFFFFF;
+}
+
 p {
 
     font-style: normal;

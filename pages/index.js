@@ -4,6 +4,8 @@ import Wrapper from '../Components/Wrapper'
 import react from 'react'
 import styled from 'styled-components'
 import Intro from '../Components/Intro'
+import HowItWOrks from '../Components/HowItWorks'
+import Squares from '../Components/Squares'
 
 const Layout = styled.section`
 background: #6C6E88;
@@ -34,7 +36,9 @@ export default function Home() {
       
     </div>
 
-    <Intro></Intro>
+    <Intro/>
+    <HowItWOrks/>
+    <Squares/>
     
     </>
     
