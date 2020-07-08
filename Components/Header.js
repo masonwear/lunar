@@ -3,13 +3,13 @@ import styled from 'styled-components'
 
 import React, { Component } from 'react';
 
-const Button = styled.button `
+const Button = styled.button`
 
 background: #FFFFFF;
 border-radius: 45px;
 width: 154px;
 height: 40px;
-font-family: 'Varela Round';
+font-family: 'Circular Std';
 font-style: normal;
 font-weight: 500;
 font-size: 15px;
@@ -27,7 +27,7 @@ border: 0;
 `;
 
 
-const Lunar = styled.section `
+const Lunar = styled.section`
 
 font-family: 'Circular Std';
 font-style: normal;
@@ -41,7 +41,7 @@ top: calc(50% - 29px/2 - 4223.5px);
 
 `;
 
-const Wrapper = styled.section `
+const Wrapper = styled.section`
 
                 display: flex;
                   justify-content: space-between;
@@ -60,9 +60,9 @@ class Header extends Component {
         return (
 
 
-<Wrapper>
-<Lunar>
-Lunar
+            <Wrapper>
+                <Lunar>
+                    Lunar
 </Lunar>
 
 
@@ -73,19 +73,19 @@ Lunar
 
 
 
-<Button      
+                <Button
 
-    href="https://github.com/styled-components/styled-components"
-      target="_blank"
-      rel="noopener"
-      primary
+                    href="https://github.com/styled-components/styled-components"
+                    target="_blank"
+                    rel="noopener"
+                    primary
 
-      >
-          Get in Touch!
+                >
+                    Get in Touch!
       </Button>
-      </Wrapper>
+            </Wrapper>
 
-            
+
         );
     }
 }

@@ -8,6 +8,10 @@ box-shadow: 9.67784px 9.67784px 22.8749px rgba(40, 42, 74, 0.25);
 border-radius: 18.4759px;
 width: 466px;
 height: 454px;
+left: 329px;
+top: 1738px;
+position: absolute;
+margin-bottom: 280px;
 
 
 `
@@ -18,6 +22,12 @@ box-shadow: 9.67784px 9.67784px 22.8749px rgba(40, 42, 74, 0.25);
 border-radius: 18.4759px;
 width: 466px;
 height: 454px;
+left: 605px;
+top: 1620px;
+position: absolute;
+display: flex;
+flex-direction: column;
+justify-content: center;
 
 
 `
@@ -26,46 +36,69 @@ const List = styled.ul`
 font-family: 'Circular Std';
 font-style: normal;
 font-weight: normal;
-font-size: 18px;
+font-size: 16px;
 line-height: 181.1%;
 display: flex;
 flex-direction: column; 
 justify-content: center;
 
 
+color: #fff;
+
+
+
+
 `
 
 const Item = styled.li`
-list-style: square;
+
+
+text-align: left;
+
 
 
 `
 
+const WeLove = styled.div`
+display: flex;
+flex-direction: column;
+align-self: center;
+
+
+
+
+
+
+
+`
 
 
 class Squares extends Component {
     render() {
         return (
             <>
-            <WhiteSquare/>
-            <GreenSquare>
-                <h3>We love designing for:</h3>
-                <List>
-                <Item>Ecommerce Websites</Item>
-                <li>Other Agencies</li>
-                <li>Simple Marketing Sites</li>
-                <li>Small Businesses</li>
-                <li>Products & Startups</li>
-                <li>Large Corporate Site Redesigns</li>
+                <WhiteSquare />
+                <GreenSquare>
+
+                    <WeLove>
+                        <h3>We love designing for:</h3>
+                        <List>
+                            <Item>Ecommerce Websites</Item>
+                            <Item>Other Agencies</Item>
+                            <Item>Simple Marketing Sites</Item>
+                            <Item>Small Businesses</Item>
+                            <Item>Products & Startups</Item>
+                            <Item>Large Corporate Site Redesigns</Item>
 
 
-                </List>
+                        </List>
+                    </WeLove>
 
-            </GreenSquare>
-            
-            
-            
-            
+                </GreenSquare>
+
+
+
+
             </>
         );
     }

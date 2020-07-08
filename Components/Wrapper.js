@@ -6,14 +6,14 @@ const GlobalStyle = createGlobalStyle`
   
   @font-face {
     font-family: 'Circular Std';
-      src: url('/static/CircularStd-Black.otf');
+      /* src: url('/static/CircularStd-Black.otf');
       src: url('/static/CircularStd-BlackItalic.otf');
       src: url('/static/CircularStd-Bold.otf');
-      src: url('/static/CircularStd-BoldItalic.otf');
+      src: url('/static/CircularStd-BoldItalic.otf'); */
       src: url('/static/CircularStd-Book.otf');
-      src: url('/static/CircularStd-BookItalic.otf');
+      /* src: url('/static/CircularStd-BookItalic.otf');
       src: url('/static/CircularStd-Medium.otf');
-      src: url('/static/CircularStd-MediumItalic.otf');
+      src: url('/static/CircularStd-MediumItalic.otf'); */
   }
   
   
@@ -36,6 +36,9 @@ const GlobalStyle = createGlobalStyle`
 
     color: #FFFFFF;
     font-family: 'Circular Std';
+
+
+
 
 
 }
@@ -68,7 +71,6 @@ font-family: 'Circular Std';
 }
 
 ul {
-    list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
@@ -77,11 +79,10 @@ ul {
 }
 
 li {
-  display: block;
   color: white;
   text-align: center;
-  padding: 29px;
   text-decoration: none;
+
 }
 
 
@@ -92,13 +93,13 @@ li {
 
 
 class Wrapper extends Component {
-    render() {
-        return (
-            <div>
-                <GlobalStyle/>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div>
+        <GlobalStyle />
+      </div>
+    );
+  }
 }
 
 export default Wrapper;
